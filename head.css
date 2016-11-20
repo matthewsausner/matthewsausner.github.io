@@ -1,0 +1,26 @@
+html {
+    height: 50%;
+    color: #000000;
+	display: table-cell;
+	vertical-align: middle;
+	font-family:"Sans-Serif" , Helvetica , Arial;
+	font-style: normal;
+	color: #404040;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+.mainPageBox{
+	display: block;
+	width:200px;
+	height: 200px;
+	margin: 10px;
+	border: 1px solid #000000;
+	}
+.backgroundBox{
+	float: left;
+	background-color: #d3d3d3;
+	padding: 120px;
+}
