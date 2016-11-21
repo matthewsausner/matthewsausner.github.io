@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Resume </title>
+	<link rel="stylesheet" type="text/css" href="matt.css">
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	 <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class = "header clearfix">
+				<nav>
+					<ul class = "nav nav-pills pull-right">
+						<li role = "presentation" class = "active">
+							<a href = ""><i class = "fa fa-home" ></i> Home</a>
+
+						</li>
+						<li role = "presentation">
+							<a href = "" data-toggle = "modal"><i class = "fa fa-envelope"></i> Contact</a>
+						</li>
+					</ul>
+				</nav>	
+			</div>
+	Thank you for emailing me! I will get beack to you as soon as possible!
+	<footer class = "footer">
+		<p>&copy; 2016 Matthew Sausner</p>
+	</footer>
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  	<div class="modal-dialog" role="document">
+     	<div class="modal-content">
+        	<div class="modal-body">
+          		<form id="contactForm" data-toggle="validator" method="POST" action="https://formspree.io/matthew.sausner@gmail.com">
+            		<div class="form-group">
+              		<label for="my-name" class="control-label">To:</label>
+              		<input type="text" class="form-control" id="to" placeholder="Matthew Sausner" disabled>
+            		</div>
+            		<div class="form-group">
+              		<label for="sender-name" class="control-label">From:</label>
+              		<input type="email" name="_replyto" class="form-control" id="from" placeholder="you@company.com" data-error="I need a valid email so I can get back to you!" required>
+              		<div class="help-block with-errors"></div>
+            		</div>
+            		<div class="form-group">
+             			<label for="message-text" class="control-label">Your Message:</label>
+              		<textarea class="form-control" name="message" id="message-text" rows="10"></textarea>
+            		</div>
+            		<div class="modal-footer">
+              		<input type="text" name="_gotcha" style="display:none" />
+              		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              		<button id="send" type="submit" class="btn btn-primary">Send</button>
+              		<input type="hidden" name="_next" value="thanks.html" />
+              	</div>
+          		</form>
+          	</div>
+        </div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+	    <!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+<!-- bootbox js -->
+	<script src="js/bootbox.min.js"></script>
+</body>
+</html>
