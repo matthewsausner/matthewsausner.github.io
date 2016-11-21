@@ -14,7 +14,8 @@
 	</head>
 </head>
 <body>
-	<div class = "header clearfix">
+	<div class = "container">
+		<div class = "header clearfix">
 				<nav>
 					<ul class = "nav nav-pills pull-right">
 						<li role = "presentation" class = "active">
@@ -27,40 +28,52 @@
 					</ul>
 				</nav>	
 			</div>
-			<h1 style = "font-size:20px padding-bottom:40px">
-						About section soon to come. 
-			</h1>
-	<footer class = "footer">
-		<p>&copy; 2016 Matthew Sausner</p>
-	</footer>
-	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
-  	<div class="modal-dialog" role="document">
-     	<div class="modal-content">
-        	<div class="modal-body">
-          		<form id="contactForm" data-toggle="validator" method="POST" action="https://formspree.io/matthew.sausner@gmail.com">
-            		<div class="form-group">
-              		<label for="my-name" class="control-label">To:</label>
-              		<input type="text" class="form-control" id="to" placeholder="Matthew Sausner" disabled>
-            		</div>
-            		<div class="form-group">
-              		<label for="sender-name" class="control-label">From:</label>
-              		<input type="email" name="_replyto" class="form-control" id="from" placeholder="you@company.com" data-error="I need a valid email so I can get back to you!" required>
-              		<div class="help-block with-errors"></div>
-            		</div>
-            		<div class="form-group">
-             			<label for="message-text" class="control-label">Your Message:</label>
-              		<textarea class="form-control" name="message" id="message-text" rows="10"></textarea>
-            		</div>
-            		<div class="modal-footer">
-              		<input type="text" name="_gotcha" style="display:none" />
-              		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              		<button id="send" type="submit" class="btn btn-primary">Send</button>
-              		<input type="hidden" name="_next" value="thanks.html" />
-              	</div>
-          		</form>
-          	</div>
-        </div>
-    </div>
+			<h1 align="center" style = "font-size:20px padding-bottom:40px ">About Me</h1>
+			<img src = "champshat.jpg" alt = "My Face" style="width:260x;height:240px;"> 
+			<p>Hi, I'm Matt!</p>
+			<p> I'm a 22 year old Software Developer from a small town outside of Buffalo, NY. I'm currently seeking work in and around New York City, but I am open to relocating just about anywhere. After taking some time off after graduating last May, I have been diligently searching for the right place to start my career. If you're company is looking for a hard working Software Developer who loves a challenge, click the "contact" button at the top of the page! If you'd like to know a little more about me, please keep reading!</p>
+			<p>I have been an athlete in one form or another my entire life. Before college, I ran cross country and was a sprinter on my highschool swim team. Once I got to college, I tried out Competitive Ultimate Frisbee. After a year of playing, I was hooked. I began to move into a leadership position on the team, and by the end of my 4 years at Binghamton, I had served as Vice-President, President, and Captain of the club. I have also played on private club teams in both Buffalo and Rochester. Ultimate is my passion, and I plan to be contributing to the greater Ultimate community for many years to come.</p>
+			<p>Ultimate Frisbee is a huge part of my life, but it is not the only thing I do with my free time. I am a mediocre juggler! I also enjoy  creating music. Currently, I am trying to learn the banjo. Well I own a banjo anyway. It's a work in progress. I am also an amatuer  carpenter, with my biggest project being the infinity table I built last summer. I try to stay open minded, and am not afraid to throw myself at new interests or hobbies. Besides banjo. Banjo is hard.
+			</p>
+			<p>So thanks for visiting the site and reading a little more anout me! If you have any questions for me, or would like to hear more about my professional experience, please feel free to contact me!
+			</p>
+			<p>
+			PS I'm the one in the suit and tie. Jeez, he looks professional.
+			</p>
+			<img src = "team.jpg" alt = "My Team" style = "width: 90%;height: 80%; padding-bottom:20px"> 
+			<div style="clear: both"></div>
+			<footer class = "footer" >
+				<p>&copy; 2016 Matthew Sausner</p>
+			</footer>
+			<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+		  	<div class="modal-dialog" role="document">
+		     	<div class="modal-content">
+		        	<div class="modal-body">
+		          		<form id="contactForm" data-toggle="validator" method="POST" action="https://formspree.io/matthew.sausner@gmail.com">
+		            		<div class="form-group">
+		              		<label for="my-name" class="control-label">To:</label>
+		              		<input type="text" class="form-control" id="to" placeholder="Matthew Sausner" disabled>
+		            		</div>
+		            		<div class="form-group">
+		              		<label for="sender-name" class="control-label">From:</label>
+		              		<input type="email" name="_replyto" class="form-control" id="from" placeholder="you@company.com" data-error="I need a valid email so I can get back to you!" required>
+		              		<div class="help-block with-errors"></div>
+		            		</div>
+		            		<div class="form-group">
+		             			<label for="message-text" class="control-label">Your Message:</label>
+		              		<textarea class="form-control" name="message" id="message-text" rows="10"></textarea>
+		            		</div>
+		            		<div class="modal-footer">
+		              		<input type="text" name="_gotcha" style="display:none" />
+		              		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		              		<button id="send" type="submit" class="btn btn-primary">Send</button>
+		              		<input type="hidden" name="_next" value="thanks.html" />
+		              	</div>
+	          		</form>
+	          	</div>
+	        </div>
+	    </div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
 	    <!-- bootstrap js -->
