@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+    <title>Particles</title>
+    <link rel="stylesheet" href="matt.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "header clearfix">
+      <nav>
+        <ul class = "nav nav-pills pull-right">
+          <li role = "presentation" class = "active">
+            <a href = " /"><i class = "fa fa-home" ></i> Home</a>
+
+          </li>
+          <li role = "presentation" >
+            <a href = "#contact" data-toggle = "modal" data-target="#contactModal"><i class = "fa fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>  
+    </div>
+
+    <img id="logo" src="particles/assets/images/particles_logo.png">
+    <br>
+    <div id="particles"></div>
+    <script type="text/javascript" src="particles/js/phaser.min.js"></script>
+    <script type="text/javascript" src="particles/js/main.js"></script>
+    <footer class = "footer">
+      <p>&copy; 2018 Matthew Sausner</p>
+    </footer>
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-body">
+              <form id="contactForm" data-toggle="validator" method="POST" action="https://formspree.io/matthew.sausner@gmail.com">
+                <div class="form-group">
+                  <label for="my-name" class="control-label">To:</label>
+                  <input type="text" class="form-control" id="to" placeholder="Matthew Sausner" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="sender-name" class="control-label">From:</label>
+                  <input type="email" name="_replyto" class="form-control" id="from" placeholder="you@company.com" data-error="I need a valid email so I can get back to you!" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Your Message:</label>
+                  <textarea class="form-control" name="message" id="message-text" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <input type="text" name="_gotcha" style="display:none" />
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button id="send" type="submit" class="btn btn-primary">Send</button>
+                  <input type="hidden" name="_next" value="thanks.html" />
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+      <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+      <!-- bootbox js -->
+  <script src="js/bootbox.min.js"></script>
+  </body>
+</html>
